@@ -1,0 +1,15 @@
+/*
+ * @Author: mashitu
+ * @Date: 2021-01-14 14:09:49
+ * @LastEditTime: 2021-01-14 15:15:37
+ * @LastEditors: mashitu
+ * @Description: scss变量
+ */
+// 主题色
+$themeBGColor: #2962B9;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  themeBGColor: $themeBGColor;
+}
