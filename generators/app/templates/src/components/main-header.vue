@@ -7,9 +7,18 @@
 -->
 
 <template>
-  <el-menu router :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
-    <el-menu-item index="/">菜单A</el-menu-item>
-    <el-menu-item index="b">菜单B</el-menu-item>
+  <el-menu
+    router
+    :default-active="activeIndex"
+    class="el-menu-demo"
+    mode="horizontal"
+  >
+    <el-menu-item index="/">
+      菜单A
+    </el-menu-item>
+    <el-menu-item index="b">
+      菜单B
+    </el-menu-item>
   </el-menu>
 </template>
 

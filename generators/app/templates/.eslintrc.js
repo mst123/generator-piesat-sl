@@ -22,7 +22,7 @@ module.exports = {
     "vue/order-in-components": [
       "error",
       {
-        "order": [
+        order: [
           "el",
           "name",
           "key",

@@ -30,12 +30,6 @@ module.exports = class extends Generator {
         name: "author",
         message: "Author's Name",
         default: ""
-      },
-      {
-        type: "input",
-        name: "email",
-        message: "Author's Email",
-        default: ""
       }
     ];
 
@@ -50,17 +44,9 @@ module.exports = class extends Generator {
     this.log("\nWriting...\n");
 
     this.__writingCopy(["package.json"], {
-      prjName: this.props.prjName,
+      name: this.props.prjName,
       description: this.props.description,
-      author: this.props.author,
-      email: this.props.email
-    });
-
-    this.__writingCopy(["README.md"], {
-      prjName: this.props.prjName,
-      description: this.props.description,
-      author: this.props.author,
-      year: new Date().getFullYear()
+      author: this.props.author
     });
 
     this.__writingCopy([
@@ -72,8 +58,7 @@ module.exports = class extends Generator {
       ".env.production",
       ".env.test",
       ".eslintrc.js",
-      ".gitignore",
-      "stylelintrc.json",
+      ".stylelintrc.json",
       "babel.config.js",
       "vue.config.js",
       "vue版本及结构规范.md"

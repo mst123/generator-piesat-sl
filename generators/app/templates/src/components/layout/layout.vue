@@ -6,7 +6,7 @@
  * @Description: 布局组件
 -->
 <template>
-  <div></div>
+  <div />
 </template>
 
 <script>
