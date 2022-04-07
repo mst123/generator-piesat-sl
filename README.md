@@ -36,3 +36,7 @@ MIT © [mashitu]()
 [daviddm-url]: https://david-dm.org/mst123/generator-piesat-sl
 [coveralls-image]: https://coveralls.io/repos/mst123/generator-piesat-sl/badge.svg
 [coveralls-url]: https://coveralls.io/r/mst123/generator-piesat-sl
+
+## version 0.1.3
+
+用sass取代了万恶的node-sass
