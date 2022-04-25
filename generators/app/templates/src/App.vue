@@ -1,6 +1,6 @@
 <template>
   <el-container id="app">
-    <el-header style="height:64px">
+    <el-header style="height: 64px;">
       <main-header />
     </el-header>
     <el-container>
@@ -20,12 +20,14 @@ export default {
 </script>
 
 <style>
-html,body{
-  height: 100%;
+html,
+body {
   width: 100%;
+  height: 100%;
 }
+
 #app {
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 </style>

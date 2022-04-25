@@ -1,13 +1,9 @@
 ## 说明
 
-"version": "0.1.2"，修改本文档描述
-
 项目已集成 `stylelint` `eslint` `git-hooks`，搭配编辑器插件可以
 
 - 自动格式化
-
   - css 属性顺序
-
   - vue单文件script属性顺序
   - 常规代码格式化
 
@@ -1069,7 +1065,15 @@ subject是commit目的的简短描述，不超过50 个字符，建议使用中�
 - 在setting中配置如下参数，即可以保存自动修改css样式
 
   ```
-  "editor.codeActionsOnSave": {
+   "editor.codeActionsOnSave": {
       "source.fixAll.stylelint": true
-    }
+    },
+    "stylelint.validate": [
+      "css",
+      "less",
+      "postcss",
+      "scss",
+      "vue",
+      "sass"
+    ],
   ```

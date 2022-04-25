@@ -68,27 +68,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import "~@/styles/mixin.scss";
-  @import "~@/styles/variables.scss";
+  @import '~@/styles/mixin.scss';
+  @import '~@/styles/variables.scss';
 
   .main-body {
-    height: 100%;
     width: 100%;
+    height: 100%;
 
     .text {
-      @include flexCenter;
+      @include flex-center;
 
-      color: $themeBGColor;
-      height: 50%;
       width: 100%;
+      height: 50%;
       font-size: 30px;
+      color: $themeBGColor;
     }
 
     .describe {
-      @include flexCenter;
+      @include flex-center;
 
-      height: 50%;
       width: 100%;
+      height: 50%;
       font-size: 30px;
     }
   }

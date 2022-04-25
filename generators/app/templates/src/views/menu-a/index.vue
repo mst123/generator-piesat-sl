@@ -1,7 +1,7 @@
 <!--
  * @Author: mashitu
  * @Date: 2021-01-14 15:09:14
- * @LastEditTime: 2021-12-31 17:37:36
+ * @LastEditTime: 2022-04-24 16:09:58
  * @LastEditors: mashitu
  * @Description: 菜单A
 -->
@@ -35,7 +35,7 @@ export default {
   },
   data() {
     return {
-
+      ceshi: "stz"
     };
   },
   computed: {
@@ -67,7 +67,7 @@ export default {
     color: #dff;
 
     .text {
-      @include flexCenter;
+      @include flex-center;
 
       width: 100%;
       height: 50%;
@@ -76,7 +76,7 @@ export default {
     }
 
     .describe {
-      @include flexCenter;
+      @include flex-center;
 
       width: 100%;
       height: 50%;

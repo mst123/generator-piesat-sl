@@ -4,6 +4,7 @@ const chalk = require("chalk");
 const yosay = require("yosay");
 
 module.exports = class extends Generator {
+  // 用户输入内容
   prompting() {
     // Have Yeoman greet the user.
     this.log(
@@ -42,7 +43,7 @@ module.exports = class extends Generator {
   // 依据模板进行新项目结构的写操作
   writing() {
     this.log("\nWriting...\n");
-
+    // EJS 模板引擎
     this.__writingCopy(["package.json"], {
       name: this.props.prjName,
       description: this.props.description,
@@ -50,6 +51,8 @@ module.exports = class extends Generator {
     });
 
     this.__writingCopy([
+      ".husky",
+      "generators",
       "public",
       "src",
       ".browserslistrc",
@@ -60,6 +63,8 @@ module.exports = class extends Generator {
       ".eslintrc.js",
       ".stylelintrc.json",
       "babel.config.js",
+      "commitlint.config.js",
+      "README.md",
       "vue.config.js",
       "vue版本及结构规范.md"
     ]);
@@ -68,15 +73,12 @@ module.exports = class extends Generator {
   // 拷贝函数
   __writingCopy(filePath, params) {
     filePath.forEach(item => {
+      // Fs 并非nodejs中的fs
       this.fs.copyTpl(
         this.templatePath(item),
         this.destinationPath(item),
         params
       );
     });
-  }
-
-  install() {
-    this.installDependencies();
   }
 };
