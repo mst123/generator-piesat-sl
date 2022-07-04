@@ -13,6 +13,7 @@
       "declarations"
     ],
     "order/properties-alphabetical-order": null,
+    "selector-pseudo-element-no-unknown": [true, {"ignorePseudoElements": ["v-deep"]}],
     "order/properties-order": [
       "display",
       "visibility",

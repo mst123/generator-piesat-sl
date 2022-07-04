@@ -64,6 +64,7 @@ module.exports = class extends Generator {
       ".stylelintrc.json",
       "babel.config.js",
       "commitlint.config.js",
+      "必读说明.md",
       "README.md",
       "vue.config.js",
       "vue版本及结构规范.md"
